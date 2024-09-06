@@ -50,4 +50,6 @@ Essentially a new incoming data pipe block would have to receive the data from i
 With the same logic a new outgoing data pipe would also have to **accept** the data as a dask data frame and perform the necessary transformation to transfer the data from data frame to the destination (Postgres database, another S3 bucket, different API endpoints and etc.)<br />
 
 - **Containerised solution:**
-The current solution is indeed containerised and can be triggered directly from CLI with minimum requirements on certain interval (daily, weekly or even hourly). From personal experience this solution can also be implemented along Apache Airflow for orchestration and scheduling (triggering the `deploy.sh` script on the server in certain intervals) or implementing the same logic in an AWS lambda function (serverless solution) where we can specify scheduled trigger to start up the task on certain intervals and schedules. 
+The current solution is indeed containerised and can be triggered directly from CLI with minimum requirements on certain interval (daily, weekly or even hourly). From personal experience this solution can also be implemented along Apache Airflow for orchestration and scheduling (triggering the `deploy.sh` script on the server in certain intervals) or implementing the same logic in an AWS lambda function (serverless solution) where we can specify scheduled trigger to start up the task on certain intervals and schedules.
+
+[DaskLink_url]: <https://docs.dask.org/en/stable>
