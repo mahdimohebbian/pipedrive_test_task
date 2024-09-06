@@ -6,7 +6,7 @@ import os
 from outgoingConnections import PipedriveDashboard
 from incomingConnections import SharedFiles
 
-
+# a custom function to delete all existing deals for test and development.
 def cleanDeals():
     url = f"https://api.pipedrive.com/v1/deals"
     start = 0
